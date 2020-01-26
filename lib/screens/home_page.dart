@@ -22,20 +22,22 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: !isSearching
             ? Text('All Countries')
             : TextField(
                 onChanged: (value) {},
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
-                    icon: Icon(
-                      Icons.search,
-                      color: Colors.white,
-                    ),
-                    hintText: 'Type here, Search Country',
-                    hintStyle: TextStyle(
-                      color: Colors.white,
-                    )),
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
+                  hintText: 'Type here, Search Country',
+                  hintStyle: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ),
       ),
     );
