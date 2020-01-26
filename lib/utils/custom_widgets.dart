@@ -35,6 +35,9 @@ class FrontCountryInfoCard extends StatelessWidget {
       elevation: 10.0,
       child: Text(
         title,
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
