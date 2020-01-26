@@ -10,6 +10,8 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   bool isSearching = false;
   List countries = [];
   List filterCountries = [];
+
+  // async-await method get data from API
   Future<dynamic> getCountries() async {
     var response =
         await GetHttp('https://restcountries.eu/rest/v2/all').getData();
@@ -19,7 +21,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: !isSearching ? Text('All Countries'):,),
     );
   }
 }
