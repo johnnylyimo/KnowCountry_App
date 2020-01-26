@@ -111,6 +111,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                             },
                             child: Card(
                               elevation: 10.0,
+                              color: Colors.indigo.shade200,
                             ),
                           );
                         })
