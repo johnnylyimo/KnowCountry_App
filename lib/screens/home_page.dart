@@ -100,7 +100,14 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                         itemCount: filterCountries.length,
                         itemBuilder: (context, int index) {
                           return GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      Country(filterCountries[index]),
+                                ),
+                              );
+                            },
                           );
                         })
                     : Center(
