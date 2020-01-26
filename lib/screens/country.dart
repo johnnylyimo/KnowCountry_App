@@ -16,6 +16,7 @@ class Country extends StatelessWidget {
       body: SafeArea(
         child: Container(
           padding: EdgeInsets.all(15.0),
+          child: OrientationBuilder(builder: (context, orientation) {}),
         ),
       ),
     );
