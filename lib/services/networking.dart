@@ -1,4 +1,6 @@
 import 'package:dio/dio.dart';
 import 'dart:convert';
 
-class GetHttp {}
+class GetHttp {
+  final String url;
+}
