@@ -15,6 +15,6 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
