@@ -96,10 +96,12 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                   ),
                 ),
                 child: filterCountries.length > 0
-                    ? ListView.builder(itemCount: filterCountries.length,itemBuilder: (context, int index) {
-                        return GestureDetector(
-                        );
-                      })
+                    ? ListView.builder(
+                        itemCount: filterCountries.length,
+                        itemBuilder: (context, int index) {
+                          return GestureDetector();
+                        })
+                    : CircularProgressIndicator(),
               )
             ],
           ),
