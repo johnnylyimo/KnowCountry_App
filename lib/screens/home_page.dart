@@ -40,7 +40,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                 ),
               ),
         actions: <Widget>[
-          isSearching ? IconButton(icon: Icon(Icons.cancel),)
+          isSearching ? IconButton(icon: Icon(Icons.cancel),color: Colors.white,)
         ],
       ),
     );
