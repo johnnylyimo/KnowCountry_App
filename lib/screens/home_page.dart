@@ -95,6 +95,11 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                     ],
                   ),
                 ),
+                child: filterCountries.length > 0
+                    ? ListView.builder(itemBuilder: (context, int index) {
+                        return GestureDetector(
+                        );
+                      })
               )
             ],
           ),
