@@ -101,7 +101,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                         itemBuilder: (context, int index) {
                           return GestureDetector();
                         })
-                    : CircularProgressIndicator(),
+                    : Center(
+                        child: CircularProgressIndicator(),
+                      ),
               )
             ],
           ),
