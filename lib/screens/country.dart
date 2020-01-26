@@ -19,8 +19,8 @@ class Country extends StatelessWidget {
           child: OrientationBuilder(builder: (context, orientation) {
             return GridView(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
-              ),
+                  crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+                  crossAxisSpacing: 2.0),
             );
           }),
         ),
