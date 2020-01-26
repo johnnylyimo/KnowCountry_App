@@ -40,13 +40,19 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                 ),
               ),
         actions: <Widget>[
-          isSearching ? IconButton(icon: Icon(Icons.cancel),color: Colors.white, onPressed: (){
-            setState(() {
-              // negate to false to bring input field or get out of input field
-              this.isSearching = false;
-              filterCountries = countries;
-            });
-          },)
+          isSearching
+              ? IconButton(
+                  icon: Icon(Icons.cancel),
+                  color: Colors.white,
+                  onPressed: () {
+                    setState(() {
+                      // negate to false to bring input field or get out of input field
+                      this.isSearching = false;
+                      filterCountries = countries;
+                    });
+                  },
+                )
+              : IconButton()
         ],
       ),
     );
