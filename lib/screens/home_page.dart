@@ -64,7 +64,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                 )
         ],
       ),
-      body: SafeArea(),
+      body: SafeArea(
+        child: Container(),
+      ),
     );
   }
 }
