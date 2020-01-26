@@ -39,6 +39,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                   ),
                 ),
               ),
+        actions: <Widget>[],
       ),
     );
   }
