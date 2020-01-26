@@ -23,6 +23,7 @@ class _CountryMapState extends State<CountryMap> {
         mapType: MapType.normal,
         initialCameraPosition: CameraPosition(
     target: LatLng(widget.latlng[0], widget.latlng[1]) ,
+    zoom: 5,
       ),
     );
   }
