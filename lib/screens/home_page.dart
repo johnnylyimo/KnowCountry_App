@@ -99,7 +99,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                     ? ListView.builder(
                         itemCount: filterCountries.length,
                         itemBuilder: (context, int index) {
-                          return GestureDetector();
+                          return GestureDetector(
+                            onTap: () {},
+                          );
                         })
                     : Center(
                         child: CircularProgressIndicator(),
