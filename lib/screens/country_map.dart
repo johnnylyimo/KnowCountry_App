@@ -8,6 +8,8 @@ class CountryMap extends StatefulWidget {
 }
 
 class _CountryMapState extends State<CountryMap> {
+  String countryName;
+
   @override
   Widget build(BuildContext context) {
     return Container();
