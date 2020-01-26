@@ -72,8 +72,10 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
               Container(
                 padding: EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
-                    color: Colors.deepPurple.shade200,
-                    borderRadius: BorderRadius.circular(10.0)),
+                  color: Colors.deepPurple.shade200,
+                  borderRadius: BorderRadius.circular(10.0),
+                  gradient: LinearGradient(),
+                ),
               )
             ],
           ),
