@@ -21,3 +21,12 @@ class BackCountryInfoCard extends StatelessWidget {
     );
   }
 }
+
+// **********************************************
+
+class FrontCountryInfoCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
