@@ -52,6 +52,7 @@ class Country extends StatelessWidget {
                     elevation: 10.0,
                     child: SvgPicture.network(
                       country['flag'],
+                      width: 200.0,
                     ),
                   ),
                 )
