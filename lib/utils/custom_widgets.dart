@@ -33,11 +33,13 @@ class FrontCountryInfoCard extends StatelessWidget {
     return Card(
       color: Colors.deepPurple.shade300,
       elevation: 10.0,
-      child: Text(
-        title,
-        style: TextStyle(
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
+      child: Center(
+        child: Text(
+          title,
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
