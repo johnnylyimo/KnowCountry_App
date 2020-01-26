@@ -17,7 +17,9 @@ class Country extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(15.0),
           child: OrientationBuilder(builder: (context, orientation) {
-            return GridView();
+            return GridView(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(),
+            );
           }),
         ),
       ),
