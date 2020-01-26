@@ -53,6 +53,7 @@ class Country extends StatelessWidget {
                     child: SvgPicture.network(
                       country['flag'],
                       width: 200.0,
+                      height: 200.0,
                     ),
                   ),
                 )
