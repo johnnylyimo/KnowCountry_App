@@ -59,7 +59,9 @@ class Country extends StatelessWidget {
                     ),
                   ),
                 ),
-                FlipCard()
+                FlipCard(
+                  direction: FlipDirection.VERTICAL,
+                )
               ],
             );
           }),
