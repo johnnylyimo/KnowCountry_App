@@ -30,6 +30,8 @@ class FrontCountryInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card();
+    return Card(
+      color: Colors.deepPurple.shade300,
+    );
   }
 }
