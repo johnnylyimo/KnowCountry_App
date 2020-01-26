@@ -52,7 +52,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                     });
                   },
                 )
-              : IconButton()
+              : IconButton(
+                  icon: Icon(Icons.search),
+                )
         ],
       ),
     );
