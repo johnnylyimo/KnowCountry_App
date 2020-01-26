@@ -11,6 +11,9 @@ class BackCountryInfoCard extends StatelessWidget {
       elevation: 10,
       child: Text(
         data,
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
