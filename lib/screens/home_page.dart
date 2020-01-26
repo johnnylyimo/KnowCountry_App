@@ -71,7 +71,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
             children: <Widget>[
               Container(
                 padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(),
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple.shade200,
+                ),
               )
             ],
           ),
