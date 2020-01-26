@@ -22,8 +22,12 @@ class _CountryMapState extends State<CountryMap> {
       body: GoogleMap(
         mapType: MapType.normal,
         initialCameraPosition: CameraPosition(
-    target: LatLng(widget.latlng[0], widget.latlng[1]) ,
-    zoom: 5,
+          target: LatLng(widget.latlng[0], widget.latlng[1]),
+          zoom: 5,
+        ),
+        onMapCreated: (GoogleMapController controller) {
+          _controller.complete(controller);
+        },
       ),
     );
   }
