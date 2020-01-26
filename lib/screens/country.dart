@@ -38,9 +38,10 @@ class Country extends StatelessWidget {
                     title: 'Population',
                   ),
                   back: BackCountryInfoCard(
-                    data: country['population'],
+                    data: country['population'].toString(),
                   ),
-                )
+                ),
+                FlipCard()
               ],
             );
           }),
