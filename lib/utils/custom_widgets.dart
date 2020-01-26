@@ -26,6 +26,7 @@ class BackCountryInfoCard extends StatelessWidget {
 
 class FrontCountryInfoCard extends StatelessWidget {
   final String title;
+  FrontCountryInfoCard({this.title})
 
   @override
   Widget build(BuildContext context) {
