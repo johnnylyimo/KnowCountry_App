@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'dart:convert';
 
 class GetHttp {
   final String url;
@@ -8,5 +7,6 @@ class GetHttp {
 
   Future getData() async {
     Response response = await Dio().get(url);
+    return response.data;
   }
 }
