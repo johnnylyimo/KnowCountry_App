@@ -22,7 +22,11 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: !isSearching ? Text('All Countries') : TextField(),
+        title: !isSearching
+            ? Text('All Countries')
+            : TextField(
+                onChanged: (value) {},
+              ),
       ),
     );
   }
