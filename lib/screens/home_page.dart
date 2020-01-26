@@ -66,9 +66,13 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
       ),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.all(15),
+          padding: EdgeInsets.all(15.0),
           child: ListView(
-            children: <Widget>[Container()],
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(10.0),
+              )
+            ],
           ),
         ),
       ),
