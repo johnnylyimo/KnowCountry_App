@@ -46,7 +46,9 @@ class Country extends StatelessWidget {
                   front: FrontCountryInfoCard(
                     title: 'Flag',
                   ),
-                  back: Card(),
+                  back: Card(
+                    color: Colors.deepPurple.shade200,
+                  ),
                 )
               ],
             );
