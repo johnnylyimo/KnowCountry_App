@@ -21,6 +21,8 @@ class _CountryMapState extends State<CountryMap> {
       ),
       body: GoogleMap(
         mapType: MapType.normal,
+        initialCameraPosition: CameraPosition(
+    target: LatLng(widget.latlng[0], widget.latlng[1]) ,
       ),
     );
   }
