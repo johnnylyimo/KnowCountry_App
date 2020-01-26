@@ -14,7 +14,9 @@ class Country extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: Container(),
+        child: Container(
+          padding: EdgeInsets.all(15.0),
+        ),
       ),
     );
   }
