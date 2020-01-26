@@ -3,4 +3,5 @@ import 'dart:convert';
 
 class GetHttp {
   final String url;
+  GetHttp(this.url);
 }
