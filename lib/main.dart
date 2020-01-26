@@ -7,6 +7,7 @@ class KnowCountry extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Search Country App',
       theme: ThemeData(),
     );
