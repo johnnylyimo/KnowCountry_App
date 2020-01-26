@@ -8,6 +8,7 @@ class BackCountryInfoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: Colors.deepPurple.shade200,
+      elevation: 10,
     );
   }
 }
