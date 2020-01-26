@@ -26,6 +26,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
             ? Text('All Countries')
             : TextField(
                 onChanged: (value) {},
+                style: TextStyle(color: Colors.white),
               ),
       ),
     );
