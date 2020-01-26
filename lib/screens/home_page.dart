@@ -19,6 +19,17 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   }
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getCountries().then((data) {
+      setState(() {
+        countries = filterCountries = data;
+      });
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
