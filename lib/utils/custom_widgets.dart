@@ -9,6 +9,9 @@ class BackCountryInfoCard extends StatelessWidget {
     return Card(
       color: Colors.deepPurple.shade200,
       elevation: 10,
+      child: Text(
+        data,
+      ),
     );
   }
 }
