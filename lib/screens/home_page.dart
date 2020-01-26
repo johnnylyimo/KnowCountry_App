@@ -28,11 +28,11 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                 onChanged: (value) {},
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
-                  icon: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                  ),
-                ),
+                    icon: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                    ),
+                    hintText: 'Type here, Search Country'),
               ),
       ),
     );
