@@ -54,6 +54,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                 )
               : IconButton(
                   icon: Icon(Icons.search),
+                  color: Colors.white,
                 )
         ],
       ),
