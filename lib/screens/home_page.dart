@@ -109,6 +109,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                                 ),
                               );
                             },
+                            child: Card(),
                           );
                         })
                     : Center(
