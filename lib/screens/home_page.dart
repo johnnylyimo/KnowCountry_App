@@ -32,7 +32,10 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                       Icons.search,
                       color: Colors.white,
                     ),
-                    hintText: 'Type here, Search Country'),
+                    hintText: 'Type here, Search Country',
+                    hintStyle: TextStyle(
+                      color: Colors.white,
+                    )),
               ),
       ),
     );
