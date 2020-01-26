@@ -109,7 +109,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                                 ),
                               );
                             },
-                            child: Card(),
+                            child: Card(
+                              elevation: 10.0,
+                            ),
                           );
                         })
                     : Center(
