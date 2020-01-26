@@ -32,6 +32,7 @@ class FrontCountryInfoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: Colors.deepPurple.shade300,
+      elevation: 10.0,
     );
   }
 }
