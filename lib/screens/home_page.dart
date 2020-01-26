@@ -55,6 +55,12 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
               : IconButton(
                   icon: Icon(Icons.search),
                   color: Colors.white,
+                  onPressed: () {
+                    setState(() {
+                      // negate to false to bring input field or get out of input field
+                      this.isSearching = true;
+                    });
+                  },
                 )
         ],
       ),
