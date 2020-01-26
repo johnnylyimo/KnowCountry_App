@@ -6,6 +6,6 @@ class GetHttp {
   GetHttp(this.url);
 
   Future getData() async {
-    var response = await Dio().get(url);
-  }
+    Response response = await Dio().get(url);
+
 }
