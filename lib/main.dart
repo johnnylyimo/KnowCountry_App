@@ -11,6 +11,7 @@ class KnowCountry extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Search Country App',
       theme: ThemeData(),
+      home: new AllCountriesHomePage(),
     );
   }
 }
