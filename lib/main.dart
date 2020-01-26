@@ -12,6 +12,7 @@ class KnowCountry extends StatelessWidget {
       title: 'Search Country App',
       theme: ThemeData(
         primaryColor: Colors.deepPurple.shade300,
+        scaffoldBackgroundColor: Colors.indigo.shade100,
       ),
       home: new AllCountriesHomePage(),
     );
