@@ -19,6 +19,7 @@ class _CountryMapState extends State<CountryMap> {
       appBar: AppBar(
         title: Text(widget.countryName),
       ),
+      body: GoogleMap(),
     );
   }
 }
