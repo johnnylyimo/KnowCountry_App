@@ -50,10 +50,12 @@ class Country extends StatelessWidget {
                   back: Card(
                     color: Colors.deepPurple.shade200,
                     elevation: 10.0,
-                    child: SvgPicture.network(
-                      country['flag'],
-                      width: 200.0,
-                      height: 200.0,
+                    child: Center(
+                      child: SvgPicture.network(
+                        country['flag'],
+                        width: 200.0,
+                        height: 200.0,
+                      ),
                     ),
                   ),
                 )
