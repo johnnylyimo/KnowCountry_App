@@ -7,6 +7,7 @@ class AllCountriesHomePage extends StatefulWidget {
 }
 
 class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
+  bool isSearching = false;
   Future<dynamic> getCountries() async {
     var response =
         await GetHttp('https://restcountries.eu/rest/v2/all').getData();
