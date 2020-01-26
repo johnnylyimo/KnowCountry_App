@@ -10,7 +10,9 @@ class KnowCountry extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Search Country App',
-      theme: ThemeData(),
+      theme: ThemeData(
+        primaryColor: Colors.deepPurple.shade300,
+      ),
       home: new AllCountriesHomePage(),
     );
   }
