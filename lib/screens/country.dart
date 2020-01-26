@@ -67,7 +67,8 @@ class Country extends StatelessWidget {
                   back: BackCountryInfoCard(
                     data: country['currencies'][0]['name'],
                   ),
-                )
+                ),
+                GestureDetector()
               ],
             );
           }),
