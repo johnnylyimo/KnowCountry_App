@@ -96,7 +96,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                   ),
                 ),
                 child: filterCountries.length > 0
-                    ? ListView.builder(itemBuilder: (context, int index) {
+                    ? ListView.builder(itemCount: filterCountries.length,itemBuilder: (context, int index) {
                         return GestureDetector(
                         );
                       })
