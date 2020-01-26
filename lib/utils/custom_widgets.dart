@@ -9,11 +9,13 @@ class BackCountryInfoCard extends StatelessWidget {
     return Card(
       color: Colors.deepPurple.shade200,
       elevation: 10,
-      child: Text(
-        data,
-        style: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 20.0,
+      child: Center(
+        child: Text(
+          data,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20.0,
+          ),
         ),
       ),
     );
