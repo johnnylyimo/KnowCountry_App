@@ -21,7 +21,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: !isSearching ? Text('All Countries'):,),
+      appBar: AppBar(
+        title: !isSearching ? Text('All Countries') : TextField(),
+      ),
     );
   }
 }
