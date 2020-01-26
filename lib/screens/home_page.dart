@@ -112,7 +112,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                             child: Card(
                               elevation: 10.0,
                               color: Colors.indigo.shade200,
-                              child: Text(filterCountries[index]['name']),
+                              child: Padding(
+                                child: Text(filterCountries[index]['name']),
+                              ),
                             ),
                           );
                         })
