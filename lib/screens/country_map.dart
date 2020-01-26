@@ -9,6 +9,8 @@ class CountryMap extends StatefulWidget {
 
 class _CountryMapState extends State<CountryMap> {
   String countryName;
+  List latlng;
+
 
   @override
   Widget build(BuildContext context) {
