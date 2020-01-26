@@ -39,7 +39,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
                   ),
                 ),
               ),
-        actions: <Widget>[],
+        actions: <Widget>[
+          isSearching ? IconButton()
+        ],
       ),
     );
   }
