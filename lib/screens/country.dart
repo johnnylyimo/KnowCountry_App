@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:search_country/utils/custom_widgets.dart';
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Country extends StatelessWidget {
   final Map country;
