@@ -32,7 +32,9 @@ class Country extends StatelessWidget {
                     data: country['capital'],
                   ),
                 ),
-                FlipCard()
+                FlipCard(
+                  direction: FlipDirection.VERTICAL,
+                )
               ],
             );
           }),
