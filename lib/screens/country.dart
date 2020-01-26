@@ -25,6 +25,9 @@ class Country extends StatelessWidget {
               children: <Widget>[
                 FlipCard(
                   direction: FlipDirection.VERTICAL,
+                  front: FrontCountryInfoCard(
+                    title: 'Capital',
+                  ),
                 ),
               ],
             );
