@@ -13,7 +13,9 @@ class Country extends StatelessWidget {
           country['name'],
         ),
       ),
-      body: SafeArea(),
+      body: SafeArea(
+        child: Container(),
+      ),
     );
   }
 }
