@@ -43,6 +43,9 @@ class Country extends StatelessWidget {
                 ),
                 FlipCard(
                   direction: FlipDirection.VERTICAL,
+                  front: FrontCountryInfoCard(
+                    title: 'Flag',
+                  ),
                 )
               ],
             );
