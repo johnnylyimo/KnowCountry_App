@@ -68,7 +68,9 @@ class Country extends StatelessWidget {
                     data: country['currencies'][0]['name'],
                   ),
                 ),
-                GestureDetector()
+                GestureDetector(
+                  onTap: () {},
+                )
               ],
             );
           }),
