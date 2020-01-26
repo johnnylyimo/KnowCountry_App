@@ -13,6 +13,7 @@ class BackCountryInfoCard extends StatelessWidget {
         data,
         style: TextStyle(
           fontWeight: FontWeight.bold,
+          fontSize: 20.0,
         ),
       ),
     );
