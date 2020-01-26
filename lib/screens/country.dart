@@ -79,6 +79,9 @@ class Country extends StatelessWidget {
                       ),
                     );
                   },
+                  child: FrontCountryInfoCard(
+                    title: 'Show Map',
+                  ),
                 )
               ],
             );
