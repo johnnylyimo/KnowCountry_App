@@ -70,7 +70,15 @@ class Country extends StatelessWidget {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            CountryMap(country['name'], country['latlng']),
+                      ),
+                    );
+                  },
                 )
               ],
             );
