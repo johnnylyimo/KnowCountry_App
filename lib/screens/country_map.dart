@@ -15,6 +15,8 @@ class _CountryMapState extends State<CountryMap> {
   Completer<GoogleMapController> _controller = Completer();
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
