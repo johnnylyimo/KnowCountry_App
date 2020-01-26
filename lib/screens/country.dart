@@ -48,6 +48,7 @@ class Country extends StatelessWidget {
                   ),
                   back: Card(
                     color: Colors.deepPurple.shade200,
+                    elevation: 10.0,
                   ),
                 )
               ],
