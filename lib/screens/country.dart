@@ -37,6 +37,9 @@ class Country extends StatelessWidget {
                   front: FrontCountryInfoCard(
                     title: 'Population',
                   ),
+                  back: BackCountryInfoCard(
+                    data: country['population'],
+                  ),
                 )
               ],
             );
