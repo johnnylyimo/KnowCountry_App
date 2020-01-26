@@ -22,7 +22,11 @@ class Country extends StatelessWidget {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
                   crossAxisSpacing: 2.0),
-              children: <Widget>[FlipCard()],
+              children: <Widget>[
+                FlipCard(
+                  direction: FlipDirection.VERTICAL,
+                ),
+              ],
             );
           }),
         ),
