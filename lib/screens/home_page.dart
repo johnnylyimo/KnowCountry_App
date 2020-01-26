@@ -12,7 +12,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   List filterCountries = [];
 
   // async-await method get data from API
-  Future<dynamic> getCountries() async {
+  getCountries() async {
     var response =
         await GetHttp('https://restcountries.eu/rest/v2/all').getData();
     return response;
