@@ -9,8 +9,8 @@ class AllCountriesHomePage extends StatefulWidget {
 
 class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   bool isSearching = false;
-  List countries = [];
-  List filterCountries = [];
+  List countries = [];  // store countries from API
+  List filterCountries = [];// store filtered countries
 
   // async-await method get data from API
   getCountries() async {
@@ -19,7 +19,15 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
     return response;
   }
 
-  void _filterCountries(value) {}
+  void _filterCountries(value) {
+    setState(() {
+      filterCountries = countries
+          .where((country) => country['name']
+              .toLowerCase()
+              .contains(value.trim().toLowerCase()))
+          .toList();
+    });
+  }
 
   @override
   void initState() {
