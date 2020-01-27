@@ -9,8 +9,8 @@ class AllCountriesHomePage extends StatefulWidget {
 
 class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   bool isSearching = false;
-  List countries = [];  // store countries from API
-  List filterCountries = [];// store filtered countries
+  List countries = []; // store countries from API
+  List filterCountries = []; // store filtered countries
 
   // async-await method get data from API
   getCountries() async {
@@ -48,7 +48,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
         title: !isSearching
             ? Text('All Countries')
             : TextField(
-                onChanged: (value) {},
+                onChanged: (value) {
+                  _filterCountries(value);
+                },
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   icon: Icon(
