@@ -17,7 +17,10 @@ class _CountryMapState extends State<CountryMap> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.countryName),
+        title: Text(
+          widget.countryName,
+          style: Theme.of(context).textTheme.title,
+        ),
       ),
       body: GoogleMap(
         mapType: MapType.normal,
