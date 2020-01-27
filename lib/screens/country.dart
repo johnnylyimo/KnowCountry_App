@@ -14,6 +14,7 @@ class Country extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           country['name'],
+          style: Theme.of(context).textTheme.title,
         ),
       ),
       body: SafeArea(
