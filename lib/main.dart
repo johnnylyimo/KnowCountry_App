@@ -16,6 +16,7 @@ class KnowCountry extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Search Country App',
       theme: ThemeData(
+        textTheme: textTheme,
         primaryColor: Colors.deepPurple.shade300,
         scaffoldBackgroundColor: Colors.indigo.shade100,
       ),
