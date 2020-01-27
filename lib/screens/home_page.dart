@@ -19,6 +19,8 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
     return response;
   }
 
+  void _filterCountries(value) {}
+
   @override
   void initState() {
     // TODO: implement initState
