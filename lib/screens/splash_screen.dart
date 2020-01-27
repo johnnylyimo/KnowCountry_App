@@ -30,6 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Text('Know Country App'),
           FlutterLogo(
             size: 300.0,
+            colors: Colors.deepPurple,
           ),
         ],
       ),
