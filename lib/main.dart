@@ -7,6 +7,7 @@ class KnowCountry extends StatelessWidget {
   final TextTheme textTheme = TextTheme(
     title: TextStyle(
       fontSize: 24.0,
+      color: Colors.white,
     ),
   );
 
