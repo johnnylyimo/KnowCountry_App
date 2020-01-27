@@ -12,7 +12,13 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
 
-    Future.delayed(Duration(seconds: 3), () {});
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AllCountriesHomePage(),
+          ));
+    });
   }
 
   @override
