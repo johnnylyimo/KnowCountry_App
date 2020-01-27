@@ -38,6 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
           Text(
             'Enjoy Knowing more!',
+            style: TextStyle(fontSize: 24.0),
           )
         ],
       ),
