@@ -15,7 +15,7 @@ class KnowCountry extends StatelessWidget {
         primaryColor: Colors.deepPurple.shade300,
         scaffoldBackgroundColor: Colors.indigo.shade100,
       ),
-      home: new AllCountriesHomePage(),
+      home: SplashScreen(),
     );
   }
 }
