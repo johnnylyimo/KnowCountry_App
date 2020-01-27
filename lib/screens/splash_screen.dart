@@ -32,6 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
             size: 300.0,
             colors: Colors.deepPurple,
           ),
+          Text('Enjoy Knowing more about Countries')
         ],
       ),
     );
