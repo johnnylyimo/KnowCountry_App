@@ -28,12 +28,17 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text('Know Country App'),
+          Text(
+            'Know a Country more',
+            style: TextStyle(fontSize: 24.0),
+          ),
           FlutterLogo(
             size: 300.0,
             colors: Colors.deepPurple,
           ),
-          Text('Enjoy Knowing more about Countries')
+          Text(
+            'Enjoy Knowing more!',
+          )
         ],
       ),
     );
