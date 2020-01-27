@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:search_country/screens/home_page.dart';
+import 'package:search_country/screens/splash_screen.dart';
 
 void main() => runApp(KnowCountry());
 
