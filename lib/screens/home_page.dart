@@ -46,7 +46,10 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
       appBar: AppBar(
         centerTitle: true,
         title: !isSearching
-            ? Text('All Countries')
+            ? Text(
+                'All Countries',
+                style: Theme.of(context).textTheme.title,
+              )
             : TextField(
                 onChanged: (value) {
                   _filterCountries(value);
