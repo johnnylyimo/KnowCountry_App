@@ -4,7 +4,11 @@ import 'package:search_country/screens/splash_screen.dart';
 void main() => runApp(KnowCountry());
 
 class KnowCountry extends StatelessWidget {
-  final TextTheme textTheme = TextTheme();
+  final TextTheme textTheme = TextTheme(
+    title: TextStyle(
+      fontSize: 24.0,
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
