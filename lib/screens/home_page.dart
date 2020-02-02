@@ -39,6 +39,14 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
           return AlertDialog(
             title: Text('No Internet connnection!', textAlign: TextAlign.center,),
             content: Text('Please turn on Internet'),
+            actions: <Widget>[
+              FlatButton(
+                child: Text('OK'),
+                onPressed: (){
+                  Navigator.of(context).pop();
+                },
+              )
+            ],
 
           );
         }
