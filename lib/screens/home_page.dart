@@ -35,6 +35,12 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   _showDialog(){
     showDialog(
         context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text('No Internet connnection!'),
+
+          );
+        }
 
     );
   }
