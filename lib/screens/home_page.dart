@@ -37,7 +37,8 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text('No Internet connnection!'),
+            title: Text('No Internet connnection!', textAlign: TextAlign.center,),
+            content: Text('Please turn on Internet'),
 
           );
         }
