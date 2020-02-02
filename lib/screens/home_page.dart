@@ -38,7 +38,15 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   //Check device is connected to the internet or not.
   void checkInternetConnectivity() async {
     var result = await Connectivity().checkConnectivity();
-
+    if (result == ConnectivityResult.mobile ||
+        result == ConnectivityResult.wifi) {
+      getCountries().then((data) {
+        setState(() {
+          countries = filterCountries = data;
+        });
+      });
+    } else {
+    }
   }
 
 
