@@ -24,23 +24,25 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Know a Country more',
-            style: TextStyle(fontSize: 24.0),
-          ),
-          FlutterLogo(
-            size: 300.0,
-            colors: Colors.deepPurple,
-          ),
-          Text(
-            'Enjoy Knowing more!',
-            style: TextStyle(fontSize: 24.0),
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Know a Country more',
+              style: TextStyle(fontSize: 24.0),
+            ),
+            FlutterLogo(
+              size: 300.0,
+              colors: Colors.deepPurple,
+            ),
+            Text(
+              'Enjoy Knowing more!',
+              style: TextStyle(fontSize: 24.0),
+            )
+          ],
+        ),
       ),
     );
   }
