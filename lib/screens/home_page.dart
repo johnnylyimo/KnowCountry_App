@@ -39,6 +39,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
           return AlertDialog(
             title: Text('No Internet connnection!', textAlign: TextAlign.center,),
             content: Text('Please turn on Internet'),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)
+            ),
             actions: <Widget>[
               FlatButton(
                 child: Text('OK'),
@@ -75,11 +78,12 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getCountries().then((data) {
-      setState(() {
-        countries = filterCountries = data;
-      });
-    });
+//    getCountries().then((data) {
+//      setState(() {
+//        countries = filterCountries = data;
+//      });
+//    });
+    checkInternetConnectivity();
   }
 
     @override
