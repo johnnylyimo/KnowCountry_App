@@ -66,6 +66,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
         });
       });
     } else {
+      _showDialog();
     }
   }
 
