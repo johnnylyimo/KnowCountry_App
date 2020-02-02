@@ -16,14 +16,15 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   // async-await method get data from API
   getCountries() async {
     var response =
-        await GetHttp('https://restcountries.eu/rest/v2/all').getData();
+    await GetHttp('https://restcountries.eu/rest/v2/all').getData();
     return response;
   }
 
   void _filterCountries(value) {
     setState(() {
       filterCountries = countries
-          .where((country) => country['name']
+          .where((country) =>
+          country['name']
               .toLowerCase()
               .contains(value.trim().toLowerCase()))
           .toList();
@@ -31,10 +32,14 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   }
 
 
-  //Check device is connected to the internet or not.
-  void checkInternetConnectivity(){
-  }
 
+
+
+  //Check device is connected to the internet or not.
+  void checkInternetConnectivity() async {
+    var result = await Connectivity().checkConnectivity();
+
+  }
 
 
   @override
@@ -48,108 +53,111 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
     });
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: !isSearching
-            ? Text(
-                'All Countries',
-                style: Theme.of(context).textTheme.title,
-              )
-            : TextField(
-                onChanged: (value) {
-                  _filterCountries(value);
-                },
-                style: TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  icon: Icon(
-                    Icons.search,
-                    color: Colors.white,
-                  ),
-                  hintText: 'Type here, Search Country',
-                  hintStyle: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: !isSearching
+              ? Text(
+            'All Countries',
+            style: Theme
+                .of(context)
+                .textTheme
+                .title,
+          )
+              : TextField(
+            onChanged: (value) {
+              _filterCountries(value);
+            },
+            style: TextStyle(color: Colors.white),
+            decoration: InputDecoration(
+              icon: Icon(
+                Icons.search,
+                color: Colors.white,
               ),
-        actions: <Widget>[
-          isSearching
-              ? IconButton(
-                  icon: Icon(Icons.cancel),
-                  color: Colors.white,
-                  onPressed: () {
-                    setState(() {
-                      // negate to false to bring input field or get out of input field
-                      this.isSearching = false;
-                      filterCountries = countries;
-                    });
-                  },
-                )
-              : IconButton(
-                  icon: Icon(Icons.search),
-                  color: Colors.white,
-                  onPressed: () {
-                    setState(() {
-                      // negate to false to bring input field or get out of input field
-                      this.isSearching = true;
-                    });
-                  },
-                )
-        ],
-      ),
-      body: SafeArea(
-        child: Container(
-          padding: EdgeInsets.all(15.0),
-          child: ListView(
-            children: <Widget>[
-              Container(
-                height: 720.0,
-                padding: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  color: Colors.deepPurple.shade200,
-                  borderRadius: BorderRadius.circular(10.0),
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    colors: [
-                      Colors.deepPurple.shade300,
-                      Colors.deepPurple.shade200,
-                      Colors.deepPurple.shade100,
-                    ],
+              hintText: 'Type here, Search Country',
+              hintStyle: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+          actions: <Widget>[
+            isSearching
+                ? IconButton(
+              icon: Icon(Icons.cancel),
+              color: Colors.white,
+              onPressed: () {
+                setState(() {
+                  // negate to false to bring input field or get out of input field
+                  this.isSearching = false;
+                  filterCountries = countries;
+                });
+              },
+            )
+                : IconButton(
+              icon: Icon(Icons.search),
+              color: Colors.white,
+              onPressed: () {
+                setState(() {
+                  // negate to false to bring input field or get out of input field
+                  this.isSearching = true;
+                });
+              },
+            )
+          ],
+        ),
+        body: SafeArea(
+          child: Container(
+            padding: EdgeInsets.all(15.0),
+            child: ListView(
+              children: <Widget>[
+                Container(
+                  height: 720.0,
+                  padding: EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurple.shade200,
+                    borderRadius: BorderRadius.circular(10.0),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      colors: [
+                        Colors.deepPurple.shade300,
+                        Colors.deepPurple.shade200,
+                        Colors.deepPurple.shade100,
+                      ],
+                    ),
                   ),
-                ),
-                child: filterCountries.length > 0
-                    ? ListView.builder(
-                        itemCount: filterCountries.length,
-                        itemBuilder: (context, int index) {
-                          return GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      Country(filterCountries[index]),
-                                ),
-                              );
-                            },
-                            child: Card(
-                              elevation: 10.0,
-                              color: Colors.indigo.shade200,
-                              child: Padding(
-                                padding: EdgeInsets.all(10.0),
-                                child: Text(filterCountries[index]['name']),
+                  child: filterCountries.length > 0
+                      ? ListView.builder(
+                      itemCount: filterCountries.length,
+                      itemBuilder: (context, int index) {
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    Country(filterCountries[index]),
                               ),
+                            );
+                          },
+                          child: Card(
+                            elevation: 10.0,
+                            color: Colors.indigo.shade200,
+                            child: Padding(
+                              padding: EdgeInsets.all(10.0),
+                              child: Text(filterCountries[index]['name']),
                             ),
-                          );
-                        })
-                    : Center(
-                        child: CircularProgressIndicator(),
-                      ),
-              )
-            ],
+                          ),
+                        );
+                      })
+                      : Center(
+                    child: CircularProgressIndicator(),
+                  ),
+                )
+              ],
+            ),
           ),
         ),
-      ),
-    );
+      );
+    }
   }
-}
