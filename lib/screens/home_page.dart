@@ -37,11 +37,12 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text('No Internet connnection!', textAlign: TextAlign.center,),
-            content: Text('Please turn on Internet'),
+            title: Text('No Internet Connnection!', textAlign: TextAlign.center,),
+            content: Text('Please turn on Internet,\nthen Close and Open again this App', textAlign: TextAlign.center,),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0)
             ),
+            backgroundColor: Colors.deepPurple.shade100,
             actions: <Widget>[
               FlatButton(
                 child: Text('OK'),
