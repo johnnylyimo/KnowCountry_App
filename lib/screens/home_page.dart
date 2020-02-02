@@ -32,7 +32,9 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
   }
 
 
-
+  _showDialog(){
+    _showDialog();
+  }
 
 
   //Check device is connected to the internet or not.
