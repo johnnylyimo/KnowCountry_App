@@ -33,7 +33,10 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
 
 
   _showDialog(){
-    _showDialog();
+    showDialog(
+        context: context,
+
+    );
   }
 
 
