@@ -69,7 +69,8 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
           countries = filterCountries = data;
         });
       });
-    } else {
+    }
+    else if(result == ConnectivityResult.none) {
       _showDialog();
     }
   }
