@@ -29,6 +29,13 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
     });
   }
 
+
+  //Check device is connected to the internet or not.
+  void checkInternetConnectivity(){
+  }
+
+
+
   @override
   void initState() {
     // TODO: implement initState
