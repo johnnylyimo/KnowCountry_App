@@ -97,7 +97,7 @@ class _AllCountriesHomePageState extends State<AllCountriesHomePage> {
           child: ListView(
             children: <Widget>[
               Container(
-                height: 540.0,
+                height: 720.0,
                 padding: EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
                   color: Colors.deepPurple.shade200,
